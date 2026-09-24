@@ -1,4 +1,4 @@
-# Terraria 国服 → 国际服存档转换器
+# Terraria 国服/国际服存档转换器
 
 一个纯浏览器端的 Terraria 存档签名转换工具。电脑端和国际服按同一类处理：国服使用 `xindong`（十六进制 `78 69 6E 64 6F 6E 67`），国际服 / 电脑端使用 `relogic`。人物 `.plr` 使用 AES-128-CBC 加密，网页会用 Terraria 固定的 UTF-16LE 密钥/IV `h3y_gUyZ` 解密、替换后再加密，并下载转换后的副本。
 
