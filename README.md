@@ -8,7 +8,7 @@
 
 ## 在线使用
 
-部署到 GitHub Pages 后，打开仓库的 Pages 地址即可使用。网页入口是 [`index.html`](index.html)。
+部署到 GitHub Pages 后，打开仓库的 Pages 地址即可使用。网页入口是 https://igloomatics.github.io/terraria-archive/ 。
 
 ## 本地使用
 
@@ -26,22 +26,4 @@ python3 terraria_converter.py convert 地图.wld -o 地图国际.wld
 
 人物 `.plr` 请使用网页入口；命令行脚本保持为简单的原位替换工具，不会尝试把加密的人物文件当作明文处理。
 
-## 发布到 GitHub Pages
 
-1. 在 GitHub 新建一个空仓库，例如 `terraria-save-converter`，不要勾选初始化 README。
-2. 在本目录执行：
-
-   ```bash
-   git init
-   git add .
-   git commit -m "Add Terraria save converter"
-   git branch -M main
-   git remote add origin https://github.com/你的用户名/terraria-save-converter.git
-   git push -u origin main
-   ```
-
-3. 打开仓库的 **Settings → Pages**，将 **Source** 设为 **GitHub Actions**。
-4. 等待 Actions 完成，Pages 地址通常是：
-   `https://你的用户名.github.io/terraria-save-converter/`
-
-仓库中的 `.github/workflows/pages.yml` 会在每次推送到 `main` 后自动发布。
